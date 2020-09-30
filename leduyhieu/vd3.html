@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function tinh()
+      {
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        var result = document.getElementById("result");
+       
+         
+        var tong = parseInt(a.value) + parseInt(b.value);
+         
+      
+        if (!isNaN(tong)){
+          result.value = tong;
+        }
+      }
+    </script>
+     <input type="text" id="a" placeholder="số thứ nhất :" value="" onkeyup="tinh()"/>
+     <label>+</label>
+     <input type="text" id="b" placeholder="số thứ hai :" value="" onkeyup="tinh()"/>
+    Kết quả đê anh em êi: <input type="text" id="result"  placeholder="Kết quả ở đây "   value=""/>
+  </body>
+</html>
