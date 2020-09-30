@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai 1</title>
+</head>
+<body>
+<script type="text/javascript">
+		function showResult(){
+			var input = document.getElementById("message");
+			var div = document.getElementById("result");
+			div.innerHTML = input.value;
+		}
+	</script>
+
+	<input type="text" id="message" value="" oninput="showResult()">
+	<div id="result"></div>
+	
+
+</body>
+</html>
